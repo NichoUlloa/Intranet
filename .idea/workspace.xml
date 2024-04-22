@@ -4,16 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb5b218-1ff3-4bca-a854-933557e80b6a" name="Changes" comment="">
+    <list default="true" id="bbb5b218-1ff3-4bca-a854-933557e80b6a" name="Changes" comment="creacion de packages y principales clases">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/CarreraController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EstudianteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/DBConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/DBGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/CarreraDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/EstudianteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Carrera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Estudiante.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
@@ -28,13 +57,31 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Nicho/IdeaProjects/Intranet/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
+        <option value="jdk-21.0.2-corretto-21.0.2-4caba194b151-51586f01" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,12 +90,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713790957486</updated>
-      <workItem from="1713790958604" duration="4000" />
+      <workItem from="1713790958604" duration="3491000" />
     </task>
+    <task id="LOCAL-00001" summary="se sube README.md">
+      <option name="closed" value="true" />
+      <created>1713791104649</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713791104649</updated>
+    </task>
+    <task id="LOCAL-00002" summary="se sube README.md">
+      <option name="closed" value="true" />
+      <created>1713791152415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713791152416</updated>
+    </task>
+    <task id="LOCAL-00003" summary="creacion de packages y principales clases">
+      <option name="closed" value="true" />
+      <created>1713791225694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713791225694</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="se sube README.md" />
+    <MESSAGE value="creacion de packages y principales clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion de packages y principales clases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
