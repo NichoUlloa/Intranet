@@ -17,4 +17,4 @@ ii. conjunto de setter/getter para sus atributos.
 
 - Considere que para una Carrera, se deben poder agregar y eliminar objetos de tipo estudiante (considere las validaciones necesarias).
 
-Para las ventanas gráficas, se requiere iniciar un menú principal que permita registrar carrera y registrar estudiantes.
+Para las  ventanas gráficas, se requiere iniciar un menú principal que permita registrar carrera y registrar estudiantes.
