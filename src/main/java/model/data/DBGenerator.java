@@ -18,8 +18,8 @@ public class DBGenerator {
         DBConnector.closeConnection();
     }
     //Metodo para conectarse a una base de datos ya creada
-    public static DSLContext conectarBD(String nombre) throws ClassNotFoundException {
-        Connection connection = DBConnector.connection(nombre,"root","");
+    public static DSLContext conectarBD(String nombreBD) throws ClassNotFoundException {
+        Connection connection = DBConnector.connection(nombreBD,"root","");
         DSLContext create = DSL.using(connection);
         return create;
     }

@@ -62,6 +62,16 @@ public class EstudianteDAO {
                 .where(DSL.field("nombre").eq(nombre)).and(DSL.field("codigo_carrera").eq(codigo)).fetch();
         return exportardatos(resultados);
     }
+
+    // obtenerEstudiantesCursoRut
+    public static String[][] obtenerEstudiantesCursoRut(DSLContext query, String rut){
+        Table estudiante = DSL.table("Estudiante");
+        Table carrera = DSL.table("Carrera");
+        Result resultados = query.select().from(estudiante).join(carrera).on(DSL.field("codigo").eq(DSL.field("codigo_carrera")))
+                .where(DSL.field("rut").eq(rut)).fetch();
+        return exportardatos(resultados);
+    }
+
     private static String[][] exportardatos(Result resultados){
         String[][] datosResultado=new String[resultados.size()][4];
         for(int registro = 0; registro < resultados.size(); registro ++){
@@ -69,6 +79,7 @@ public class EstudianteDAO {
             datosResultado[registro][1] = (String) resultados.getValue(registro,"matricula");
             datosResultado[registro][2] = (String) resultados.getValue(registro,"nombre_carrera");
             datosResultado[registro][3] = (String) resultados.getValue(registro,"codigo");
+
         }
         return datosResultado;
     }
