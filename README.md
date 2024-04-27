@@ -1,3 +1,4 @@
+## INTRANET 2.0
 ### Descripción del Proyecto
 Este proyecto tiene como objetivo desarrollar una aplicación de gestión estudiantil usando Programación Orientada a Objetos (POO) e interfaces gráficas para la intranet de la Universidad de La Frontera (UFRO). El sistema permite registrar y gestionar estudiantes y carreras, proporcionando funcionalidades para agregar, eliminar y buscar estudiantes dentro de diversas carreras.
 
