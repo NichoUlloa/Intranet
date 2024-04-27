@@ -1,20 +1,31 @@
-### Tarea - Caso Intranet
-Objetivo: Esta es una actividad para repasar los contenidos de POO, generación de interfaces gráficas y gestión de bases de datos.
+### Descripción del Proyecto
+Este proyecto tiene como objetivo desarrollar una aplicación de gestión estudiantil usando Programación Orientada a Objetos (POO) e interfaces gráficas para la intranet de la Universidad de La Frontera (UFRO). El sistema permite registrar y gestionar estudiantes y carreras, proporcionando funcionalidades para agregar, eliminar y buscar estudiantes dentro de diversas carreras.
 
-Caso: Suponga que se quieren modelar computacionalmente a los estudiantes de la UFRO para desarrollar una aplicación con POO e interfaces gráficas para la Intranet.
+### Estructura del Sistema
+#### Paquetes y Clases
+El sistema está organizado en varios paquetes que facilitan la modularidad y el mantenimiento del código:
 
-- Se considera que un estudiante queda definido por: nombre, apellido, rut, número de matrícula.
+* model: Contiene las clases Carrera y Estudiante. Incluye subpaquetes:
+  * data: Incluye clases para la conexión (DBConnector) y creación (DBGenerator) de la base de datos.
+  * dao: Incluye CarreraDAO y EstudianteDAO para gestionar operaciones CRUD sobre la base de datos.
+* controller:
+  * CarreraController: Gestiona la lógica de negocio relacionada con las carreras.
+  * EstudianteController: Gestiona la lógica de negocio relacionada con los estudiantes.
+* gui/vista:
+  * Ventana: Clase base para las ventanas.
+  * VentanaBienvenida: Ventana inicial que muestra las opciones principales.
+  * VentanaBusquedaEstudiante: Permite la búsqueda de estudiantes por nombre y/o carrera.
+  * VentanaRegistroCarrera: Permite el registro de nuevas carreras.
+  * VentanaRegistroEstudiante: Permite el registro de nuevos estudiantes.
+  * VentanaTabla: Utilizada para mostrar los resultados de las búsquedas.
+* principal:
+  Clase principal que inicializa el proyecto.
+#### Funcionalidades
+*   Registrar Carrera: Permite ingresar una nueva carrera verificando que no exista previamente.
+*   Registrar Estudiantes: Permite añadir estudiantes a una carrera existente, validando la existencia previa de la carrera.
+*   Buscar Estudiantes: Búsqueda por nombre y/o carrera, con validaciones para asegurar que los campos necesarios estén completos.
+*   Gestión de Carreras: Incluye agregar y eliminar carreras, con validaciones para evitar inconsistencias.
+*   Gestión de Estudiantes: Incluye agregar y eliminar estudiantes de carreras específicas.
 
-- Su clase Estudiante debiera considerar:
-
-i. los constructores con y sin parámetros.
-
-ii. conjunto de setter/getter para sus atributos.
-
-- Por otro lado, se considera que una clase Carrera está formada por un conjunto de estudiantes, los cuales deben ser gestionados a través de un ArrayList.
-
--Una carrera debe considerar como mínimo, el nombre de la carrera, un código y la cantidad de semestres que contiene.
-
-- Considere que para una Carrera, se deben poder agregar y eliminar objetos de tipo estudiante (considere las validaciones necesarias).
-
-Para las  ventanas gráficas, se requiere iniciar un menú principal que permita registrar carrera y registrar estudiantes.
+#### Diagrama de Clases UML
+![IntranetUML.png](IntranetUML.png)
